@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background: linear-gradient(45deg, yellow , orange 15%, rgb(255, 0, 34) 50% , rgb(114, 6, 129));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    height: 420px;
+    width: 280px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px black;
+    border: 3px solid rgba(0, 0, 0, 0.422);
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+#storiyan{
+    height: 120px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* background-color: rgb(187, 24, 187); */
+    padding: 15px;
+    border-bottom: 1px solid rgba(196, 193, 193, 0.82);
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+#storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    /* background-color: aquamarine; */
+    border: 3px solid red;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 3px gray;
+    display: inline-block;
+    
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    border-radius: 20px;
+    display: none;
+    z-index: 9;
+
+}
+#share{
+    height: 30%;
+    width: 100%;
+    float: right;
+    margin-left: 20px;
+    position: absolute;
+    font-size: large;
+    z-index: 5;
+}
+
+.likebtn{
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: white;
+    font-size: larger;
+    position: relative;
+    
+}
+.likebtn:hover{
+    cursor: pointer;
+}
+
+.likebtn i:hover{
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 3px red;
+}
